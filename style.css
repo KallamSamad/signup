@@ -1,20 +1,37 @@
 .outerBox{
     display: flex;
 }
-.odinBox{
-    flex: 1;
-    background-color: red;
+.odinBox {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    height: 100vh;  
+     position: relative;
 }
+
+
 .formCont{
     flex: 2;
-    background-color: green;
 }
-.textbox{
-    background-color: blue;
+
+img{
+    display: block;
 }
-.forBox{
-    background-color: black;
-}
-.footer{
-    background-color: pink;
+
+
+.innerlabel{
+    display: flex;
+    opacity: 0.7;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caesar Dressing", sans-serif;
+    color: white;
+    position: absolute; 
+    top: 25%;            
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+      background-color: rgb(8, 42, 16);
+
 }
