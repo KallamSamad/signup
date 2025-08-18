@@ -1,1 +1,20 @@
-dummy text
+.outerBox{
+    display: flex;
+}
+.odinBox{
+    flex: 1;
+    background-color: red;
+}
+.formCont{
+    flex: 2;
+    background-color: green;
+}
+.textbox{
+    background-color: blue;
+}
+.forBox{
+    background-color: black;
+}
+.footer{
+    background-color: pink;
+}
