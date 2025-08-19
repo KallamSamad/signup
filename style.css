@@ -24,6 +24,8 @@ html, body {
 
 .formCont{
     flex: 2;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     max-width: 66.66%;
 }
@@ -51,10 +53,8 @@ img{
 }
 .textBox {
     font-family: "Arial Rounded MT Bold", "Segoe UI Rounded", "Helvetica Rounded", Arial, sans-serif;
-    margin-top: 20%;
-    margin-bottom: 70%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0;
+    padding: 20%;
     font-weight: 550;
 }
 
@@ -77,4 +77,34 @@ img{
 a {
     text-decoration: none;
     color: white;
+}
+.formBox, 
+.formBox form {
+  width: 100%;
+}
+
+.formBox input,
+.formBox button {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+.textBox {
+  display: flex;            
+  flex-direction: column;     
+  margin: 0;             
+  padding: 20px;            
+}
+
+.formBox {
+  background-color: white;
+  flex: 0 0 auto;                 
+  padding: 10%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px lightgrey;
+  position: relative;
+}
+.mainFooter{
+    background-color: rgb(243, 239, 239);
+    padding: 10%;
 }
