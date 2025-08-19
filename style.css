@@ -57,3 +57,24 @@ img{
     margin-right: 5%;
     font-weight: 550;
 }
+
+.formCont {
+    background-color: rgb(243, 239, 239);
+}
+
+.greenFooter{
+    bottom: 0;
+    left: -2;
+    padding: 10%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: "Arial Rounded MT Bold", "Segoe UI Rounded", "Helvetica Rounded", Arial, sans-serif;
+    font-size: small;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
