@@ -131,9 +131,12 @@ background-color: white;
 }
 .formGroup {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: row;
+  gap: 5%;
   align-items: flex-start;
+  font-size: small;
+  color: #040504;
+  letter-spacing: 1px;
 }
 
 .formGroup input {
