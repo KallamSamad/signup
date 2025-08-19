@@ -26,26 +26,26 @@
             <p>You know you want to.</p> </div>
             <div class="formBox">
             <p><b>Let's do this!</b></p>
-            <form class="formGroup" action="#" method="post">
+            <form class="formGroup" action="#" method="post" id="signupForm">
              <div class="split1">
             <label for="fName">FIRST NAME: </label>
-            <input type="text" id="fName" name="fName" placeholder="John">
+            <input type="text" id="fName" name="fName" placeholder="John" required>
             <label for="sName">SURNAME: </label>
-            <input type="text" id="sName" name="sName" placeholder="Doe">
+            <input type="text" id="sName" name="sName" placeholder="Doe" required>
             <label for="email">EMAIL:</label>
-             <input type="input" id="email" name="email" placeholder="example@mail.com">
+             <input type="input" id="email" name="email" placeholder="example@mail.com" required>
             </div>
             <div class="split2">
-            <label for="phone">MOBILE NUMBER:</label>
-            <input type="input" id="phone" name="phone" placeholder="11 digit phone number">
+            <label for="phone" maxlength="8">MOBILE NUMBER:</label>
+            <input type="input" id="phone" name="phone" placeholder="11 digit phone number" required>
              <label for="password">PASSWORD:</label>
-            <input type="input" id="password" name="password">
+            <input type="input" id="password" name="password" required>
              <label for="confirm">CONFIRM PASSWORD:</label>
-            <input type="input" id="confirm" name="confirm">
+            <input type="input" id="confirm" name="confirm" required>
             </div>
         </form>
             </div>
-            <div class="mainFooter"><input class="Btn" type="submit" value="Create Account"></input></div>
+            <div class="mainFooter"><input class="Btn" type="submit" value="Create Account" form="signupForm"></input><b>Already have an account? <a class="bottomlink" href="#">Log in</a></b></div>
         </div>
     </div>
 </body>
