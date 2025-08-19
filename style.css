@@ -49,3 +49,11 @@ img{
       background-color: rgb(8, 42, 16);
 
 }
+.textBox {
+    font-family: "Arial Rounded MT Bold", "Segoe UI Rounded", "Helvetica Rounded", Arial, sans-serif;
+    margin-top: 20%;
+    margin-bottom: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 550;
+}
