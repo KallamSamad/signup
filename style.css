@@ -79,8 +79,13 @@ a {
     color: white;
 }
 .formBox, 
-.formBox form {
+.formBox {
   width: 100%;
+  display: flex;
+  gap: 20px;
+}
+form{
+    width: 80%;
 }
 
 .formBox input,
@@ -90,21 +95,51 @@ a {
   box-sizing: border-box;
 }
 .textBox {
-  display: flex;            
-  flex-direction: column;     
+background-color: white;    
   margin: 0;             
   padding: 20px;            
 }
 
 .formBox {
   background-color: white;
-  flex: 0 0 auto;                 
+  display:flex;
+  flex-direction: column;
+           
   padding: 10%;
+  padding-top: 2%;
   box-sizing: border-box;
-  box-shadow: 0 4px 15px lightgrey;
+  box-shadow: 0 6px 18px lightgrey;
   position: relative;
 }
 .mainFooter{
     background-color: rgb(243, 239, 239);
     padding: 10%;
+}
+
+.textBox, .formBox{
+    font-family: "Arial Rounded MT Bold", "Segoe UI Rounded", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.Btn{
+    background-color: #596D48;
+    border-radius: 10px;
+    color: white;
+    padding: 4%;
+    width: 20vw;
+
+
+}
+.formGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.formGroup input {
+  flex: 1 1 200px;  
+}
+
+.formGroup label {
+  flex: 0 0 100px; 
 }
