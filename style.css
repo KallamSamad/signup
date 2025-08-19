@@ -146,3 +146,23 @@ background-color: white;
 .formGroup label {
   flex: 0 0 100px; 
 }
+
+input{
+    border-radius: 5px ;
+    padding: 5%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 100%;
+    border: 1px solid #E5E7EB;
+}
+
+.mainFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.bottomlink{
+    color:#596D48;
+}
