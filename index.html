@@ -33,20 +33,33 @@
             <label for="sName">SURNAME: </label>
             <input type="text" id="sName" name="sName" placeholder="Doe" required>
             <label for="email">EMAIL:</label>
-             <input type="input" id="email" name="email" placeholder="example@mail.com" required>
+             <input type="email" id="user_email" name="user_email" placeholder="example@mail.com" required>
             </div>
             <div class="split2">
-            <label for="phone" maxlength="8">MOBILE NUMBER:</label>
-            <input type="input" id="phone" name="phone" placeholder="11 digit phone number" required>
+            <label for="phone" >MOBILE NUMBER:</label>
+            <input type="input" id="phone" name="phone" placeholder="11 digit phone number" required maxlength="11" minlength="11">
              <label for="password">PASSWORD:</label>
-            <input type="input" id="password" name="password" required>
+            <input type="password" id="password" name="password" required minlength="8">
              <label for="confirm">CONFIRM PASSWORD:</label>
-            <input type="input" id="confirm" name="confirm" required>
+            <input type="password" id="confirm" name="confirm" required minlength="8">
             </div>
         </form>
             </div>
             <div class="mainFooter"><input class="Btn" type="submit" value="Create Account" form="signupForm"></input><b>Already have an account? <a class="bottomlink" href="#">Log in</a></b></div>
         </div>
     </div>
+    <script>
+const form = document.getElementById('signupForm');
+
+form.addEventListener('submit', function(e) {
+  const password = document.getElementById('password').value;
+  const confirm = document.getElementById('confirm').value;
+
+  if (password !== confirm) {
+    e.preventDefault(); 
+    alert('Passwords do not match!');
+  }
+});
+</script>
 </body>
 </html>
