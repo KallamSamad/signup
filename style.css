@@ -166,3 +166,7 @@ input{
 .bottomlink{
     color:#596D48;
 }
+
+input:invalid{
+    border:2px solid red;
+}
